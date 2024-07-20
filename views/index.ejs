@@ -8,15 +8,15 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Benvenuti nella mia App Node.js</h1>
-    <p>Questa è una semplice interfaccia utente creata con Node.js, Express ed EJS.</p>
+  <div class="container bg-secondary p-3 rounded">
+    <h1 class="text-white">Welcome to My First Node.js App</h1>
+    <p  class="text-white">This is a simple user interface created with Node js, Express ed EJS.</p>
     <form action="/" method="POST">
       <div class="form-group">
-        <label for="inputText">Inserisci qualcosa:</label>
-        <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Scrivi qui...">
+        <label class="text-white" for="inputText">Type something:</label>
+        <input type="text" class="form-control" id="inputText" name="inputText" placeholder="Write here...">
       </div>
-      <button type="submit" class="btn btn-primary">Invia</button>
+      <button type="submit" class="btn btn-primary">Send</button>
     </form>
     <% if (typeof userInput !== 'undefined') { %>
         <div class="alert alert-success" role="alert">

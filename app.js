@@ -7,7 +7,7 @@ const port = 3000;
 // Imposta EJS come motore di template
 app.set('view engine', 'ejs');
 
-// Middleware per parsing del body delle richieste
+// Middleware per parsing del body e delle richieste
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Servire file statici
